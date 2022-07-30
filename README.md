@@ -1,7 +1,7 @@
 # Group-2---Food-Deserts-How-They-Affect-Community-Health
 Analysis of data from an MU study in Detroit about how food deserts affect a communities’ health
 
-## 7/30/200
+## 7/30/2022
 
 I wrote a short jupyter notebook to pair down the csv files into smaller pandas datframes with just the columns that we discussed wanting to use during thursdays class.
 
