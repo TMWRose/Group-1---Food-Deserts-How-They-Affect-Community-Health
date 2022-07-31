@@ -1,0 +1,37 @@
+== DataSet: Neighborhood effects : Health Status ==
+Authoremail: tveinot@umich.edu
+Creator: 
+Veinot,Tiffany,C.
+Michigan Department of Health & Human Services
+U.S. Census Bureau, American Community Survey
+Data Driven Detroit
+Okullo, Dolorence
+Michigan Department of Vital Statistics
+Date Published: 2017-11-15T14:11:23+00:00
+Depositor: tveinot@umich.edu
+Description: Health status data includes data about the health of persons within a census tract in Metropolitan Detroit, measured at the census tract level. This includes data about 1) mortality by condition; 2) exposures to toxic substances; and 3) disability.
+
+Coverage for all data: 10-county Detroit-Warren-Ann Arbor Combined Statistical Area.
+Doi: doi:10.7302/rmjd-w037
+Keyword: 
+Community Health
+Mortality Rates by Condition 
+Disability
+Elevated Blood Lead Levels
+Census Tract level
+All-Cause Mortality Rates
+Spatial Measures
+Language: 
+SAS 9.4
+English
+Methodology: Each variable within the files has its own methodology. Please refer to the code book for detail.
+Rights License: http://creativecommons.org/licenses/by-nc/4.0/
+Subject Discipline: 
+Health Sciences
+Social Sciences
+State: active
+Title: Neighborhood effects : Health Status
+Total File Count: 2
+Total File Size: 7.38 MB
+Visibility: published
+Workflow State: deposited
