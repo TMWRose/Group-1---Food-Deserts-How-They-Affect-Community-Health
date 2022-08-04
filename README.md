@@ -50,34 +50,38 @@ from the food atlas we want the following columns
 
 
 FROM THE NEIGHBORHOOD FOOD ENVIRONMENT
-GEOID10 - Census Tract ID 10-digit Census Tract ID
-CountyCode - County Code County code; contained in Census Tract ID
-CountyName - County Name
+    GEOID10 - Census Tract ID 10-digit Census Tract ID
+    CountyCode - County Code County code; contained in Census Tract ID
+    CountyName - County Name
 
-Food_Desert_Pct_Lowa_Pop -  Percentage of people with low access to a supermarket or large grocery store 2011
-Food_Desert_lowa_Pop -  Number of people with low access to a supermarket or large grocery store 2011
-Food_Desert_Pct_Lowi - Percentage of total population that is low-income and has low access to a supermarket or large grocery store 2011
-Food_Desert_Lowi - Number of low-income people with low access to a supermarket or large grocery store 2011
+    Food_Desert_Pct_Lowa_Pop -  Percentage of people with low access to a supermarket or large grocery store 2011
+    Food_Desert_lowa_Pop -  Number of people with low access to a supermarket or large grocery store 2011
+    Food_Desert_Pct_Lowi - Percentage of total population that is low-income and has low access to a supermarket or large grocery store 2011
+    Food_Desert_Lowi - Number of low-income people with low access to a supermarket or large grocery store 2011
 
+    Spatial_Measures_grocerystore_Density - Full-Line Grocery stores - Kernel Density by census tract 2016 
+        
+    Spatial_Measures_fastfood_density - Fast food stores- Kernel Density by census tract 2
 
 
 
 FROM THE NEIGHBORHOOD HEALTH
-GEOID10 - Census Tract ID 10-digit Census Tract ID
-CountyCode - County Code County code; contained in Census Tract ID
-CountyName - County Name
+    GEOID10 - Census Tract ID 10-digit Census Tract ID
+    CountyCode - County Code County code; contained in Census Tract ID
+    CountyName - County Name
 
-Diab_YearDX2009_2013 -  Number of deaths with diabetes listed as cause reported BY census tract from 2009-2013
+    Diab_YearDX2009_2013 -  Number of deaths with diabetes listed as cause reported BY census tract from 2009-2013
 
-Diab_YearDX2010_2014 - Number of deaths with diabetes listed as cause 2010 to 2014
+    Diab_YearDX2010_2014 - Number of deaths with diabetes listed as cause 2010 to 2014
 
-Cardio_YearDX2009_2013 - 2009 to 2013 Number of deaths with cardiovascular disease listed as cause reported BY census tract from 2009-2013
-Cardio_YearDX2010_2014 - 2010 to 2014 Number of deaths with cardiovascular disease listed as cause reported BY census tract from 2010-2014
+    Cardio_YearDX2009_2013 - 2009 to 2013 Number of deaths with cardiovascular disease listed as cause reported BY census tract from 2009-2013
+    Cardio_YearDX2010_2014 - 2010 to 2014 Number of deaths with cardiovascular disease listed as cause reported BY census tract from 2010-2014
 
-AllCause_MortalityRate_09_13 - 2009 to 2013 All-cause mortality rate for the period 2009 to 2013 BY census tract
-AllCause_MortalityRate_10_14 - 2010 to 2014 All-cause mortality rate for the period 2010 to 2014 BY census tract
-Diab_MortalityRate_09_13 - 2009 to 2013 Diabetes mortality rate for the period 2009 to 2013 BY census tract
-Diab_MortalityRate_10_14 - 2010 to 2014 Diabetes mortality rate for the period 2010 to 2014 BY census tract
+    AllCause_MortalityRate_09_13  2009 to 2013 All-cause mortality rate for the period 2009 to 2013 BY census tract
+    AllCause_MortalityRate_10_14 - 2010 to 2014 All-cause mortality rate for the period 2010 to 2014 BY census tract
+    Diab_MortalityRate_09_13 - 2009 to 2013 Diabetes mortality rate for the period 2009 to 2013 BY census tract
+    Diab_MortalityRate_10_14 - 2010 to 2014 Diabetes mortality rate for the period 2010 to 2014 BY census tract
 
-Cardio_MortalityRate_09_13 - 2009 to 2013 Cardiovascular disease mortality rate for the period 2009 to 2013 BY census tract
-Cardio_MortalityRate_10_14 - 2010 to 2014 Cardiovascular disease mortality rate for the period 2010 to 2014 BY census tract
+    Cardio_MortalityRate_09_13 - 2009 to 2013 Cardiovascular disease mortality rate for the period 2009 to 2013 BY census tract
+    Cardio_MortalityRate_10_14 - 2010 to 2014 Cardiovascular disease mortality rate for the period 2010 to 2014 BY census tract
+
