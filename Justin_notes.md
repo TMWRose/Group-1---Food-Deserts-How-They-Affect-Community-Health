@@ -119,3 +119,10 @@ TARGET IDEA: We are doing a regression model trying to predict the number of peo
 ### End of night notes Thursday
 
 workbook code now stiches together the ATLAS data from the seperate csv files into a joined dataframe. That dataframe is outputed as mederg_df.csv
+
+### Friday brainstorm
+
+To grab the FIPS codes and add them to I think we are going to use a for loop and a collection of if elif statements. There are only 10 counties so there will only be a need for that many statements - if CountyCode = _____ then FIPS = ____
+elif County Code = ______ then FIPS = _____ and so on.
+
+There is probably a more elegent way to do this with code and if there were more than the 10 different FIPS we were trying to assign it would be worth looking into this more
