@@ -29,18 +29,22 @@ from the food atlas we want the following columns
     - LACCESS_HHNV10 - Low access + Low income population + No Car 2010
     - LACCESS_HHNV15 - Low access + Low income population + No Car 2015
 - HEALTH TABLE
+    - FIPS
     - PCT_DIABETES_ADULTS08 - Diabetes Rate 2008
     - PCT_DIABETES_ADULTS13 - Diabetes Rate 2013
     - PCT_OBESE_ADULTS12 - Obesity Rate 2008
     - PCT_OBESE_ADULTS17 - Obesity Rate 2013
 - SOCIOECONOMIC
+    - FIPS
     - MEDHHINC15 - Median Household Income
     - POVRATE15 - Poverty Rate
 - RESTAURANTS
+    - FIPS
     - FFRPTH11 - Fast Food rest per 1000 population 2011
     - FFRPTH16 - - Fast Food rest per 1000 population 2016
     - PCH_FFRPTH_11_16 - - Fast Food rest per 1000 population Percent change
 - STORES
+    - FIPS
     - GROCPTH11 - Grocery stores/1,000 pop, 2011	
     - GROCPTH16 - Grocery stores/1,000 pop, 2016	
     - PCH_GROCPTH_11_16 - Grocery stores/1,000 pop (% change), 2011-16	
@@ -62,6 +66,8 @@ FROM THE NEIGHBORHOOD FOOD ENVIRONMENT
     Spatial_Measures_grocerystore_Density - Full-Line Grocery stores - Kernel Density by census tract 2016 
         
     Spatial_Measures_fastfood_density - Fast food stores- Kernel Density by census tract 2
+            - would need to transform these column to compair them to the ATLAS data. ATLAS data is fast food per 1000 people. this is average distance to a fast foor / grocery store . 
+                - might be doable - transform this into an estimate of stores per 1000 using population data for the census tract so it matches the ATLAS data
 
 
 
@@ -85,3 +91,19 @@ FROM THE NEIGHBORHOOD HEALTH
     Cardio_MortalityRate_09_13 - 2009 to 2013 Cardiovascular disease mortality rate for the period 2009 to 2013 BY census tract
     Cardio_MortalityRate_10_14 - 2010 to 2014 Cardiovascular disease mortality rate for the period 2010 to 2014 BY census tract
 
+
+
+
+# Thursday 8/4/2022 notes
+## Dashboard
+Set up a google sheets to do the dashboard layout as Kevin described on thursday 8/4
+
+We will be using a REGRESSION MODEL
+
+TARGET IDEA: We are doing a regression model trying to predict the number of people who die per county.
+    - build the prediction model off the data from the 10 michigan counties.
+    - We have neighborhood level data for 10 counties that are considered food desserts
+        -  we have the population and the diabeties mortality rate (as well as many other mortality rates) 
+        - we have fast food
+    - We have a county level dataset for the entire nation
+        - county level data has population data and data on population that is classified as having low access to quality food as well as low income people who have low access to quality food. We also have the same data at the neighborhood level
