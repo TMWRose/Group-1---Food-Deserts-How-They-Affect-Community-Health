@@ -96,6 +96,8 @@ FROM THE NEIGHBORHOOD HEALTH
 
 # Thursday 8/4/2022 notes
 ## Dashboard
+This sundays submission if just going to be graded on the readme . they want a clear discription of what we are doing. an erd . links to where we found the data sets are also encouraged
+
 Set up a google sheets to do the dashboard layout as Kevin described on thursday 8/4
 
 We will be using a REGRESSION MODEL
@@ -107,3 +109,13 @@ TARGET IDEA: We are doing a regression model trying to predict the number of peo
         - we have fast food
     - We have a county level dataset for the entire nation
         - county level data has population data and data on population that is classified as having low access to quality food as well as low income people who have low access to quality food. We also have the same data at the neighborhood level
+
+## For the neighborhood datasets
+
+- need to add FIPS key to eachline in the neighborhood data
+    - lookup fips key based on county name
+        - use the fips key to connect in overall diabities and obesity rate for the county to the neighborhood health effects 
+
+### End of night notes Thursday
+
+workbook code now stiches together the ATLAS data from the seperate csv files into a joined dataframe. That dataframe is outputed as mederg_df.csv
