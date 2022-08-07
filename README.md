@@ -1,11 +1,10 @@
-# Group-1---Food-Deserts-How-They-Affect-Community-Health
-Analysis of data from an MU study in Detroit about how food deserts affect a communities’ health
+# Group-1 Diabetes/Obesity Mortality Rates in Food Deserts
 
-##Presentation
-Selected topic
-Reason why they selected their topic
-Description of their source of data
-Questions they hope to answer with the data
+## Presentation
+* Analysis of how food deserts can affect a cmmunities diabetes/obesity mortality rate.
+* We initally were going to focus on predicting if counties were food deserts or not based on countrywide zipcodes, but that would have been a much bigger project than we could finish in 4 weeks so we narrowed our focus to just diabetes. 
+* Our data comes from the Food Atalas by the USDA and data we pulled from the MU study *“A ‘Big Data’ Approach to Understanding Neighborhood Effects in Chronic Illness Disparities.”*
+* We are looking to predict the health of the a county based on data from food deserts in Michigan. 
 
 ## Communication Protocals
 * Slack is the main communication method
