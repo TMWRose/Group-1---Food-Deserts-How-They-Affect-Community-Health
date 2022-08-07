@@ -12,3 +12,6 @@
 * Email is the back-up method of communication in case the first two fail
 * Meet as a team at 6PM, the hour before class, on Tuesday and Thursday to review progress
 
+## ERD
+![image](https://user-images.githubusercontent.com/100237685/183312296-1b115e6b-e4ea-4b6e-8326-334692879380.png)
+
