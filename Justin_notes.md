@@ -122,6 +122,7 @@ workbook code now stiches together the ATLAS data from the seperate csv files in
 
 ### Friday brainstorm
 
+# Not nessisary The CountyCode column is actually the FIPS code, just renamed the column
 To grab the FIPS codes and add them to I think we are going to use a for loop and a collection of if elif statements. There are only 10 counties so there will only be a need for that many statements - if CountyCode = _____ then FIPS = ____
 elif County Code = ______ then FIPS = _____ and so on.
 
