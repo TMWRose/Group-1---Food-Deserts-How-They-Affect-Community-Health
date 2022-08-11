@@ -1,63 +1,75 @@
-,Category Code,Variable Name,Variable Code,Units
-3,ACCESS,"Population, low access to store (%), 2010",PCT_LACCESS_POP10,Percent
-4,ACCESS,"Population, low access to store (%), 2015",PCT_LACCESS_POP15,Percent
-8,ACCESS,"Low income & low access to store (%), 2010",PCT_LACCESS_LOWI10,Percent
-9,ACCESS,"Low income & low access to store (%), 2015",PCT_LACCESS_LOWI15,Percent
-13,ACCESS,"Households, no car & low access to store (%), 2010",PCT_LACCESS_HHNV10,Percent
-14,ACCESS,"Households, no car & low access to store (%), 2015",PCT_LACCESS_HHNV15,Percent
-16,ACCESS,"SNAP households, low access to store (%), 2015",PCT_LACCESS_SNAP15,Percent
-44,STORES,"Grocery stores/1,000 pop, 2011",GROCPTH11,"# per 1,000 pop"
-45,STORES,"Grocery stores/1,000 pop, 2016",GROCPTH16,"# per 1,000 pop"
-50,STORES,"Supercenters & club stores/1,000 pop, 2011",SUPERCPTH11,"# per 1,000 pop"
-51,STORES,"Supercenters & club stores/1,000 pop, 2016",SUPERCPTH16,"# per 1,000 pop"
-56,STORES,"Convenience stores/1,000 pop, 2011",CONVSPTH11,"# per 1,000 pop"
-57,STORES,"Convenience stores/1,000 pop, 2016",CONVSPTH16,"# per 1,000 pop"
-68,STORES,"SNAP-authorized stores/1,000 pop, 2012",SNAPSPTH12,"# per 1,000 pop"
-69,STORES,"SNAP-authorized stores/1,000 pop, 2017",SNAPSPTH17,"# per 1,000 pop"
-74,STORES,"WIC-authorized stores/1,000 pop, 2011",WICSPTH11,"# per 1,000 pop"
-75,STORES,"WIC-authorized stores/1,000 pop, 2016",WICSPTH16,"# per 1,000 pop"
-80,RESTAURANTS,"Fast-food restaurants/1,000 pop, 2011",FFRPTH11,"# per 1,000 pop"
-81,RESTAURANTS,"Fast-food restaurants/1,000 pop, 2016",FFRPTH16,"# per 1,000 pop"
-86,RESTAURANTS,"Full-service restaurants/1,000 pop, 2011",FSRPTH11,Count
-87,RESTAURANTS,"Full-service restaurants/1,000 pop, 2016",FSRPTH16,Count
-89,RESTAURANTS,"Expenditures per capita, fast food, 2007*",PC_FFRSALES07,Dollars
-90,RESTAURANTS,"Expenditures per capita, fast food, 2012*",PC_FFRSALES12,Dollars
-91,RESTAURANTS,"Expenditures per capita, restaurants, 2007*",PC_FSRSALES07,Dollars
-92,RESTAURANTS,"Expenditures per capita, restaurants, 2012*",PC_FSRSALES12,Dollars
-93,ASSISTANCE,"SNAP redemptions/SNAP-authorized stores, 2012",REDEMP_SNAPS12,Dollars/store
-94,ASSISTANCE,"SNAP redemptions/SNAP-authorized stores, 2017",REDEMP_SNAPS17,Dollars/store
-96,ASSISTANCE,"SNAP participants (% pop), 2012*",PCT_SNAP12,Percent
-97,ASSISTANCE,"SNAP participants (% pop), 2017*",PCT_SNAP17,Percent
-99,ASSISTANCE,"SNAP benefits per capita, 2012",PC_SNAPBEN12,Dollars/capita
-100,ASSISTANCE,"SNAP benefits per capita, 2017",PC_SNAPBEN17,Dollars/capita
-102,ASSISTANCE,"SNAP participants (% eligible pop), 2011*",SNAP_PART_RATE11,Percent
-103,ASSISTANCE,"SNAP participants (% eligible pop), 2016*",SNAP_PART_RATE16,Percent
-125,ASSISTANCE,"WIC redemptions per capita, 2011",PC_WIC_REDEMP11,Dollars/capita
-126,ASSISTANCE,"WIC redemptions per capita, 2016",PC_WIC_REDEMP16,Dollars/capita
-128,ASSISTANCE,"WIC redemptions/WIC-authorized stores, 2011",REDEMP_WICS11,Dollars/store
-129,ASSISTANCE,"WIC redemptions/WIC-authorized stores, 2016",REDEMP_WICS16,Dollars/store
-131,ASSISTANCE,"WIC participants (% pop), 2012*",PCT_WIC12,Percent
-132,ASSISTANCE,"WIC participants (% pop), 2017*",PCT_WIC17,Percent
-134,ASSISTANCE,"WIC infant and children participants (% infant & children), 2014*",PCT_WICINFANTCHILD14,Percent
-135,ASSISTANCE,"WIC infant and children participants (% infant & children), 2016*",PCT_WICINFANTCHILD16,Percent
-146,ASSISTANCE,"Food Banks, 2018",FOOD_BANKS18,Count
-147,INSECURITY,"Household food insecurity (%, three-year average), 2012-14*",FOODINSEC_12_14,Percent
-148,INSECURITY,"Household food insecurity (%, three-year average), 2015-17*",FOODINSEC_15_17,Percent
-150,INSECURITY,"Household very low food security (%, three-year average), 2012-14*",VLFOODSEC_12_14,Percent
-151,INSECURITY,"Household very low food security (%, three-year average), 2015-17*",VLFOODSEC_15_17,Percent
-174,LOCAL,"Farmers' markets/1,000 pop, 2013",FMRKTPTH13,"# per 1,000 pop"
-175,LOCAL,"Farmers' markets/1,000 pop, 2018",FMRKTPTH18,"# per 1,000 pop"
-243,LOCAL,"Food hubs, 2018",FOODHUB18,Count
-255,HEALTH,"Adult diabetes rate, 2008",PCT_DIABETES_ADULTS08,Percent
-256,HEALTH,"Adult diabetes rate, 2013",PCT_DIABETES_ADULTS13,Percent
-257,HEALTH,"Adult obesity rate, 2012*",PCT_OBESE_ADULTS12,Percent
-258,HEALTH,"Adult obesity rate, 2017*",PCT_OBESE_ADULTS17,Percent
-259,HEALTH,"High schoolers physically active (%), 2017*",PCT_HSPA17,Percent
-263,HEALTH,"Recreation & fitness facilities/1,000 pop, 2011",RECFACPTH11,"# per 1,000 pop"
-264,HEALTH,"Recreation & fitness facilities/1,000 pop, 2016",RECFACPTH16,"# per 1,000 pop"
-274,SOCIOECONOMIC,"Median household income, 2015",MEDHHINC15,Dollars
-275,SOCIOECONOMIC,"Poverty rate, 2015",POVRATE15,Percent
-276,SOCIOECONOMIC,"Persistent-poverty counties, 2010",PERPOV10,Legend
-277,SOCIOECONOMIC,"Child poverty rate, 2015",CHILDPOVRATE15,Percent
-278,SOCIOECONOMIC,"Persistent-child-poverty counties, 2010",PERCHLDPOV10,Legend
-279,SOCIOECONOMIC,"Metro/nonmetro counties, 2010",METRO13,Legend
+Category Code,Variable Name,Variable Code,Units,DataType
+SUPPLIMENTAL,Federal Information Processing Standard - County Code ID,FIPS,ID,INT
+SUPPLIMENTAL,County Name,County,ID / Category,VARCHAR
+SUPPLIMENTAL,State Name,State,ID / Category,VARCHAR
+SOCIOECONOMIC,"Median household income, 2015",MEDHHINC15,Dollars,INT
+SOCIOECONOMIC,"Poverty rate, 2015",POVRATE15,Percent,FLOAT
+SOCIOECONOMIC,"Persistent-poverty counties, 2010",PERPOV10,Legend,BOOL
+SOCIOECONOMIC,"Child poverty rate, 2015",CHILDPOVRATE15,Percent,FLOAT
+SOCIOECONOMIC,"Persistent-child-poverty counties, 2010",PERCHLDPOV10,Legend,BOOL
+SOCIOECONOMIC,"Metro/nonmetro counties, 2010",METRO13,Legend,BOOL
+SUPPLIMENTAL,2010 Population ,2010_Census_Population,Count,INT
+SUPPLIMENTAL,2011 Population Estimate,Population_Estimate_2011,Count,INT
+SUPPLIMENTAL,2012 Population Estimate,Population_Estimate_2012,Count,INT
+SUPPLIMENTAL,2013 Population Estimate,Population_Estimate_2013,Count,INT
+SUPPLIMENTAL,2014 Population Estimate,Population_Estimate_2014,Count,INT
+SUPPLIMENTAL,2015 Population Estimate,Population_Estimate_2015,Count,INT
+SUPPLIMENTAL,2016 Population Estimate,Population_Estimate_2016,Count,INT
+SUPPLIMENTAL,2017 Population Estimate,Population_Estimate_2017,Count,INT
+SUPPLIMENTAL,2018 Population Estimate,Population_Estimate_2018,Count,INT
+ACCESS,"Population, low access to store (%), 2010",PCT_LACCESS_POP10,Percent,FLOAT
+ACCESS,"Population, low access to store (%), 2015",PCT_LACCESS_POP15,Percent,FLOAT
+ACCESS,"Low income & low access to store (%), 2010",PCT_LACCESS_LOWI10,Percent,FLOAT
+ACCESS,"Low income & low access to store (%), 2015",PCT_LACCESS_LOWI15,Percent,FLOAT
+ACCESS,"Households, no car & low access to store (%), 2010",PCT_LACCESS_HHNV10,Percent,FLOAT
+ACCESS,"Households, no car & low access to store (%), 2015",PCT_LACCESS_HHNV15,Percent,FLOAT
+ACCESS,"SNAP households, low access to store (%), 2015",PCT_LACCESS_SNAP15,Percent,FLOAT
+STORES,"Grocery stores/1,000 pop, 2011",GROCPTH11,"# per 1,000 pop",FLOAT
+STORES,"Grocery stores/1,000 pop, 2016",GROCPTH16,"# per 1,000 pop",FLOAT
+STORES,"Supercenters & club stores/1,000 pop, 2011",SUPERCPTH11,"# per 1,000 pop",FLOAT
+STORES,"Supercenters & club stores/1,000 pop, 2016",SUPERCPTH16,"# per 1,000 pop",FLOAT
+STORES,"Convenience stores/1,000 pop, 2011",CONVSPTH11,"# per 1,000 pop",FLOAT
+STORES,"Convenience stores/1,000 pop, 2016",CONVSPTH16,"# per 1,000 pop",FLOAT
+STORES,"SNAP-authorized stores/1,000 pop, 2012",SNAPSPTH12,"# per 1,000 pop",FLOAT
+STORES,"SNAP-authorized stores/1,000 pop, 2017",SNAPSPTH17,"# per 1,000 pop",FLOAT
+STORES,"WIC-authorized stores/1,000 pop, 2011",WICSPTH11,"# per 1,000 pop",FLOAT
+STORES,"WIC-authorized stores/1,000 pop, 2016",WICSPTH16,"# per 1,000 pop",FLOAT
+RESTAURANTS,"Fast-food restaurants/1,000 pop, 2011",FFRPTH11,"# per 1,000 pop",FLOAT
+RESTAURANTS,"Fast-food restaurants/1,000 pop, 2016",FFRPTH16,"# per 1,000 pop",FLOAT
+RESTAURANTS,"Full-service restaurants/1,000 pop, 2011",FSRPTH11,Count,FLOAT
+RESTAURANTS,"Full-service restaurants/1,000 pop, 2016",FSRPTH16,Count,FLOAT
+RESTAURANTS,"Expenditures per capita, fast food, 2007*",PC_FFRSALES07,Dollars,FLOAT
+RESTAURANTS,"Expenditures per capita, fast food, 2012*",PC_FFRSALES12,Dollars,FLOAT
+RESTAURANTS,"Expenditures per capita, restaurants, 2007*",PC_FSRSALES07,Dollars,FLOAT
+RESTAURANTS,"Expenditures per capita, restaurants, 2012*",PC_FSRSALES12,Dollars,FLOAT
+ASSISTANCE,"SNAP redemptions/SNAP-authorized stores, 2012",REDEMP_SNAPS12,Dollars/store,FLOAT
+ASSISTANCE,"SNAP redemptions/SNAP-authorized stores, 2017",REDEMP_SNAPS17,Dollars/store,FLOAT
+ASSISTANCE,"SNAP participants (% pop), 2012*",PCT_SNAP12,Percent,FLOAT
+ASSISTANCE,"SNAP participants (% pop), 2017*",PCT_SNAP17,Percent,FLOAT
+ASSISTANCE,"SNAP benefits per capita, 2012",PC_SNAPBEN12,Dollars/capita,FLOAT
+ASSISTANCE,"SNAP benefits per capita, 2017",PC_SNAPBEN17,Dollars/capita,FLOAT
+ASSISTANCE,"SNAP participants (% eligible pop), 2011*",SNAP_PART_RATE11,Percent,FLOAT
+ASSISTANCE,"SNAP participants (% eligible pop), 2016*",SNAP_PART_RATE16,Percent,FLOAT
+ASSISTANCE,"WIC redemptions per capita, 2011",PC_WIC_REDEMP11,Dollars/capita,FLOAT
+ASSISTANCE,"WIC redemptions per capita, 2016",PC_WIC_REDEMP16,Dollars/capita,FLOAT
+ASSISTANCE,"WIC redemptions/WIC-authorized stores, 2011",REDEMP_WICS11,Dollars/store,FLOAT
+ASSISTANCE,"WIC redemptions/WIC-authorized stores, 2016",REDEMP_WICS16,Dollars/store,FLOAT
+ASSISTANCE,"WIC participants (% pop), 2012*",PCT_WIC12,Percent,FLOAT
+ASSISTANCE,"WIC participants (% pop), 2017*",PCT_WIC17,Percent,FLOAT
+ASSISTANCE,"WIC infant and children participants (% infant & children), 2014*",PCT_WICINFANTCHILD14,Percent,FLOAT
+ASSISTANCE,"WIC infant and children participants (% infant & children), 2016*",PCT_WICINFANTCHILD16,Percent,FLOAT
+ASSISTANCE,"Food Banks, 2018",FOOD_BANKS18,Count,INT
+INSECURITY,"Household food insecurity (%, three-year average), 2012-14*",FOODINSEC_12_14,Percent,FLOAT
+INSECURITY,"Household food insecurity (%, three-year average), 2015-17*",FOODINSEC_15_17,Percent,FLOAT
+INSECURITY,"Household very low food security (%, three-year average), 2012-14*",VLFOODSEC_12_14,Percent,FLOAT
+INSECURITY,"Household very low food security (%, three-year average), 2015-17*",VLFOODSEC_15_17,Percent,FLOAT
+LOCAL,"Farmers' markets/1,000 pop, 2013",FMRKTPTH13,"# per 1,000 pop",FLOAT
+LOCAL,"Farmers' markets/1,000 pop, 2018",FMRKTPTH18,"# per 1,000 pop",FLOAT
+LOCAL,"Food hubs, 2018",FOODHUB18,Count,INT
+HEALTH,"Adult diabetes rate, 2008",PCT_DIABETES_ADULTS08,Percent,FLOAT
+HEALTH,"Adult diabetes rate, 2013",PCT_DIABETES_ADULTS13,Percent,FLOAT
+HEALTH,"Adult obesity rate, 2012*",PCT_OBESE_ADULTS12,Percent,FLOAT
+HEALTH,"Adult obesity rate, 2017*",PCT_OBESE_ADULTS17,Percent,FLOAT
+HEALTH,"High schoolers physically active (%), 2017*",PCT_HSPA17,Percent,FLOAT
+HEALTH,"Recreation & fitness facilities/1,000 pop, 2011",RECFACPTH11,"# per 1,000 pop",FLOAT
+HEALTH,"Recreation & fitness facilities/1,000 pop, 2016",RECFACPTH16,"# per 1,000 pop",FLOAT
