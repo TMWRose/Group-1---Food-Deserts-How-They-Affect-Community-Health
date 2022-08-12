@@ -1,4 +1,4 @@
-# Group-1 Diabetes/Obesity Mortality Rates in Food Deserts
+# Group-1 Obesity Mortality Rate in Food Deserts
 
 ## Presentation
 * Analysis of how food deserts can affect a communities diabetes/obesity mortality rate.
