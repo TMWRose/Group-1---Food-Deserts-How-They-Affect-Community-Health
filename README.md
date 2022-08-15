@@ -1,2 +1,6 @@
-# Group-2---Food-Deserts-How-They-Affect-Community-Health
-Analysis of data from an MU study in Detroit about how food deserts affect a communities’ health
+# Segment 2 update
+## Communication protocols
+
+* In this week's segment, all group members kept in touch via Slack and text messaging as a secondary option. 
+* There was also group meetings on Tuesdays and Thursdays 1 hour before the class session.
+ 
