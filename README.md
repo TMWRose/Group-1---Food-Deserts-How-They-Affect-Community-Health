@@ -17,6 +17,7 @@
 * After exploring the data we had we decided to drop a few columns we had initially selected because they had too many null values to be of any use to us.
 ### Feature Engineering
 * For many of these measures we had matched pairs of data with results from 2 different years. Ultimately, we decided to average those pairs as part of our standardization and feature engineering.
+<img width="813" alt="Screen Shot 2022-08-14 at 8 53 47 PM" src="https://user-images.githubusercontent.com/101376325/184564926-ddba6130-6ec8-494d-a652-cbce77e1f9e3.png">
 * The other engineering we did before feeding our data into the machine learning model was to standardize it using the StandardizedScaler from the sklearn module. We then used the train_test_split function from sklearn to split our data into training and testing sets. We used the standard parameters to do the split.
 ### Model Selection and EDA
 * After a discussion with the instructor, we were convinced to try a Random Forest Regressor to model our data. RFR is a supervised learning algorithm that allows us to test for a single target variable and through an ensemble learning method of using diverging decision trees arrives at a weighted average for our independent variables to give us an insight on what independent variables contribute the most to our target feature.
