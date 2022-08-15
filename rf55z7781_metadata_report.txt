@@ -1,0 +1,36 @@
+== DataSet: Neighborhood Effects: Food Environment ==
+Authoremail: tveinot@umich.edu
+Creator: 
+Okullo, Dolorence
+Yan, Xiang (Jacob)
+Data Driven Detroit
+Veinot, Tiffany C.
+Gomez-Lopez, Iris N.
+Goodspeed, Robert
+Date Published: 2016-12-30T17:02:39+00:00
+Depositor: tveinot@umich.edu
+Description: 	
+The food environment is: 1) The physical presence of food that affects a person’s diet; 2) A person’s proximity to food store locations; 3) The distribution of food stores, food service, and any physical entity by which food may be obtained; or 4) A connected system that allows access to food. (Source: https://www.cdc.gov/healthyplaces/healthtopics/healthyfood/general.htm) Data included here concern: 1) Food access; and 2) Liquor access. Spatial Coverage for most data: 10-county Detroit-Warren-Ann Arbor Combined Statistical Area, Michigan, USA. See exception for grocery store data below.
+Doi: doi:10.7302/Z2VT1Q1B
+Keyword: 
+Food Deserts
+Census tract level
+Full-Line Grocery Stores
+Modified Retail Food Environment Index (MRFEI)
+Farmer’s Markets
+Spatial Measures
+Fast Food Establishments
+Language: English
+Methodology: 	
+Each variable within the files has its own methodology. Please refer to the code book for detail.
+Rights License: http://creativecommons.org/licenses/by-nc/4.0/
+Subject Discipline: 
+Social Sciences
+Health Sciences
+Other
+State: active
+Title: Neighborhood Effects: Food Environment
+Total File Count: 2
+Total File Size: 463 KB
+Visibility: published
+Workflow State: deposited
