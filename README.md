@@ -7,6 +7,10 @@
  ##  Outline of the project
 
  * After multiple discussions among group members and advice from the instructor and teaching assistants, the dataset used for the machine learning process was a single excel file(FoodAtlasEnvironment.xls) derived from the USDA website. 
+ * An update to the ERD was also done and it looks as shown below:
+  <img width="1015" alt="Screen Shot 2022-08-14 at 9 13 31 PM" src="https://user-images.githubusercontent.com/101376325/184566417-605c43f7-058b-4581-801d-5aba305f5028.png">
+
+  
  * The following 5 steps were followed and explanation in greater detail is included:
 
 ### Preliminary Data Processing
@@ -32,3 +36,4 @@
 <img width="400" alt="Screen Shot 2022-08-14 at 8 42 11 PM" src="https://user-images.githubusercontent.com/101376325/184564432-6b5a3364-0144-4604-b52d-d23975be6f07.png">
 
 * While it isn't surprising that many of the factors that contribute the most to bad health at the county level are poverty related. What is interesting and worthy of more exploration is why these three factors in particular stood out when there were a number of other metrics about poverty, including a few that directly measured the poverty rate. 
+
