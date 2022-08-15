@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Group-1 Obesity Mortality Rate in Food Deserts
 
 ## Presentation
