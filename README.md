@@ -14,7 +14,7 @@
 
 ## ERD
 ![image](https://user-images.githubusercontent.com/100237685/183312296-1b115e6b-e4ea-4b6e-8326-334692879380.png)
-
+=======
 # Segment 2 update
 ## Communication protocols
 
@@ -53,3 +53,4 @@
 <img width="400" alt="Screen Shot 2022-08-14 at 8 42 11 PM" src="https://user-images.githubusercontent.com/101376325/184564432-6b5a3364-0144-4604-b52d-d23975be6f07.png">
 
 * While it isn't surprising that many of the factors that contribute the most to bad health at the county level are poverty related. What is interesting and worthy of more exploration is why these three factors in particular stood out when there were a number of other metrics about poverty, including a few that directly measured the poverty rate. 
+
