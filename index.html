@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Obesity Rates in Communities</title>
+    <link
+            rel="stylesheet"
+            href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+            integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+            crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="static/css/style.css"> 
+</head>
+<body class="bg-powderblue">
+    <div class="wrapper">
+
+    <nav>
+        <h3 class ="d-flex justify-content-center">Food Deserts & Their Effects on Community Health</h3> 
+        <!-- Tab links -->
+        <div class="tab d-flex justify-content-center">
+            <button class="tablinks" onclick="openCity(event, 'Homepage')"id="defaultOpen">Home</button>
+            <button class="tablinks" onclick="openCity(event, 'Data Visualizations')">Data Visualizations</button>
+        </div>
+    </nav>
+        <!-- Tab content -->
+        <div id="Homepage" class="tabcontent">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-4 d-flex justify-content-center">
+                        <h3>About the Project</h3>
+                    </div>
+                    <div class="col-md-8">
+                        <p style="font-size: 22px;">
+                            An analysis of the rates of Obesity and Diabetes and how Food Deserts directly affect these rates in communities. Food Deserts, according to the CDC, are “areas characterized by poor access to healthy  and affordable food, may contribute to social and spatial disparities in diet and diet-related health outcomes.” Data was collected from an extensive workbook that included 73 distinct features. These features included data related to the density food retailers in the county broken down by establishment type, data related to the overall health of the area, population data, and some socioeconomic factors. Standardization and cleaning of the data included dropping any null values and averaging measures that had matched pairs of data with results from 2 different years.
+                            We utilized the Random Forest Regressor to identify what variables had the most impact on our target variable. We were able to conclude that expenditure per person at fast food restaurants ranked the highest with government assistance program and Household Food Insecurity following. 
+                            
+                            <br><br>Our project takes a look at how the  obesity is impacted by the food sources surrounding people in their community. Food sources, money spent on food, and assistance were determined to have the strongest relationship with obesity rates in a community.  <br><br> what do we want this to say
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="Data Visualizations" class="tabcontent">
+            <div class="container fluid">
+                <div class="row">
+                    <div class="col-md-4 d-content-center">
+              <h3>Data Visualizations</h3>
+            
+            <div class='tableauPlaceholder' id='viz1661109496972' style='position: relative'><noscript><a href='#'><img alt='Contributing Factors to Poor Health ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;WC&#47;WC9264M4K&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='path' value='shared&#47;WC9264M4K' /> <param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;WC&#47;WC9264M4K&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1661109496972');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='1016px';vizElement.style.height='991px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script>
+        <script src="static/js/app.js"></script>
+        <script>
+        // Get the element with id="defaultOpen" and click on it
+        // document.getElementById("defaultOpen").click();
+        </script>
+</body>
