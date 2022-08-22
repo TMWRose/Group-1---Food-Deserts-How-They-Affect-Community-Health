@@ -1,0 +1,7 @@
+Select two_merge.FIPS, two_merge.REDEMP_SNAPS, two_merge. PCT_SNAP, two_merge.PC_SNAPBEN, two_merge.SNAP_PART_RATE, two_merge.PC_WIC_REDEMP, two_merge. REDEMP_WICS, two_merge.PCT_WIC, two_merge.PCT_WICINFANTCHILD, two_merge.FOOD_BANKS, two_merge.FOODINSEC__, two_merge.VLFOODSEC__, 
+two_merge.FMRKTPTH, two_merge.PCT_DIABETES_ADULTS, two_merge.PCT_OBESE_ADULTS, two_merge.PCT_HSPA, two_merge.RECFACPTH, two_merge.MEDHHINC, two_merge.POVRATE,two_merge.PERPOV, two_merge.CHILDPOVRATE, two_merge.PERCHLDPOV,two_merge.METRO,one_merge_one.Census_Population,one_merge_one.Population_Estimate,one_merge_one.PCT_LACCESS_POP,one_merge_one.PCT_LACCESS_LOWI, one_merge_one.PCT_LACCESS_HHNV, one_merge_one.PCT_LACCESS_SNAP, one_merge_one.GROCPTH,one_merge_one.SUPERCPTH, one_merge_one.CONVSPTH, one_merge_one.SNAPSPTH, one_merge_one.WICSPTH, one_merge_one.FFRPTH, one_merge_one.FSRPTH, one_merge_one.PC_FFRSALES, one_merge_one.PC_FSRSALES  
+into final_merged
+from two_merge
+Join one_merge_one on two_merge.fips=one_merge_one.fips         
+
+select * from final_merged
