@@ -39,48 +39,32 @@ With the help of data in the USDA's Food Atlas we sought to understand what fact
 * We ran the RFR for two possible target variables. 
 
 When we targeted obesity rate we were able to saw some off the charts accuracy scores
-![obesity score](\images\obesity_test_score.png)
+![obesity score](images/obesity_test_score.png)
 
 The RFR model identified these as the top factors contributing to high obesity
 
-Our model showed these as the top factors that lead to a high obesity rate:
-1. Full Service Resturant Spending Per Capita ($)
-2. Population with "Low Food Security" (%)
-3. SNAP participants (% pop)
-4. Households, no car & low access to store (%)
-5. Infant participation in WIC (% pop)
-6. Population with "Very Low Food Security" (%)
-7. WIC Participation  Overall (% pop)
-8. Fast Food Resturant Spending Per Capita ($)
-
-![obesity factores](\images\obesity_top_factors.png)
+![obesity factores](images/obesity_top_factors.png)
 
 The problem with this approach is that the dataset only had obesity rates at the state level. 
 
 When we changed the target to diabetes rate, which we had values for at the county level the model score predictably fell
-![diabetes score](\images\diabetes_test_score.png)
+![diabetes score](images/diabetes_test_score.png)
 
 
-A score of .79 is not optimal but when we considered the scope data and the difficulty of predicting such a difficult variable we felt that some insights might still be gained from our imperfect model. 
+A score of .81 is not optimal but when we considered the scope data and the difficulty of predicting such a difficult variable we felt that some insights might still be gained from our imperfect model. 
 
-The top contributing factors in our diabetes model were:
+![diabetes factors](images/diabetes_top_factors.png)
 
-1. Median household income, 2015
-2. SNAP participants (% pop)
-3. Child Poverty Rate (% pop)
-4. Households, no car & low access to store (%)
-5. SNAP Spending Per Capita ($)
-6. Full Service Resturant Spending Per Capita ($)
-7. High schoolers physically active (%)
-8. Population with "Very Low Food Security" (%)
-9. Fast Food Sales Per Capita ($)
+While both of our models were imperfect for the reasons mentioned above by looking at the results of both we were able to make some interesting conclutions. There were a number of factors that were shared between the two models. Most of the factors identified on each side were related to the socioeconomic makeup of the area. 
 
+The thing that stood out to us were the shared factors that didn't have an obvious tie to the socioeconomic makeup of the county. In fact they seemed to suggest the opposite of the stock conclution, that poor economic conditions by themselves lead to poor community health. 
 
-![diabetes factors](\images\diabetes_top_factors.png)
+Here are the top contributing factors for both obesity and diabetes rates that we identified in simpler terms:
+![formatted list](images/top_factors_presentation.png)
 
 ### DRAFT
 
-Our preliminary data analysis yielded some interesting results. The RFR model found that the feature that most contributed to obesity rate was Expenditure per capita at full service restaurants. The measure of expenditure per person at fast food restaurants ranked fifth in our models weight of importance. 
+Our data analysis yielded some interesting results. The RFR model found that the feature that most contributed to obesity rate was Expenditure per capita at full service restaurants. The measure of expenditure per person at fast food restaurants ranked fifth in our models weight of importance. 
 
 The categories that ranked second, third and fourth by order of importance all relate to the poverty level of the locale. Two were measure of the percentage of the population that receives federal food assistance in the form of WIC or SNAP benefits. The other measure the factor called Household Food Insecurity.
 
