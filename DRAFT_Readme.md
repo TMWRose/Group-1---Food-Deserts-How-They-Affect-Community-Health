@@ -27,9 +27,7 @@ With the help of data in the USDA's Food Atlas we sought to understand what fact
 
 
 ## Preliminary Data Processing
-### Entity Relationship Diagram
-#### (A map of the realtionships within our database)
-* The data we were looking to extract was spread over nine different sheets within the MS Excel file that contained the entire Food Atlas. We extracted each sheet as a separate pandas dataframe and then exported each dataframe to a separate csv file without doing any further processing within pandas.
+The data we were looking to extract was spread over nine different sheets within the MS Excel file that contained the entire Food Atlas. We extracted each sheet as a separate pandas dataframe and then exported each dataframe to a separate csv file without doing any further processing within pandas.
 
 ```
 {
@@ -45,12 +43,8 @@ local_df = global_dict['LOCAL'][LOCAL_LIST]
 health_df = global_dict['HEALTH'][HEALTH_LIST]
 socioeconomic_df = global_dict['SOCIOECONOMIC'][SOCIOECONOMIC_LIST]
 
-#access_df.head()
-}
-```
 
-```
-{## Output the dataframes to csv files ##
+## Output the dataframes to csv files ##
 
 population_df.to_csv('data/ATLAS/population.csv')
 access_df.to_csv('data/ATLAS/access.csv')
@@ -64,9 +58,44 @@ socioeconomic_df.to_csv('data/ATLAS/socioeconomic.csv')
 }
 ```
 
-* We chose to do it this way to fulfil the rubric requirement that we have multiple tables in our database and that we perform at least some kind of join within our database.
+### Entity Relationship Diagram
+#### (A map of the realtionships within our database)
 
-![image](https://user-images.githubusercontent.com/100237685/183312296-1b115e6b-e4ea-4b6e-8326-334692879380.png)
+We then created a SQL database by importing each csv sheet into postgres/pgAdmin as a seperate table. We chose to do it this way to fulfil the rubric requirement that we perform at least some kind of join within our database.
+
+```
+{## Load the individual dataframes into the database ##
+
+population_df.to_sql('population', engine, index = False, if_exists='replace')
+access_df.to_sql('access', engine, index = False, if_exists='replace')
+store_df.to_sql('stores', engine, index = False, if_exists='replace')
+restaurants_df.to_sql('restaurants', engine, index = False, if_exists='replace')
+assistance_df.to_sql('assistance', engine, index = False, if_exists='replace')
+insecurity_df.to_sql('insecurity', engine, index = False, if_exists='replace')
+local_df.to_sql('local', engine, index = False, if_exists='replace')
+health_df.to_sql('health', engine, index = False, if_exists='replace')
+socioeconomic_df.to_sql('socioeconomic', engine, index = False, if_exists='replace')
+}
+```
+
+We also needed to furfil a requirement that our data be hosted on the cloud. For this task we chose to create an remote database on Amazon Web Services and connect it to out local database
+
+```
+{### Dependencies and Setup ###
+### LOAD DATAFRAME FROM AWS SERVER
+
+import pandas as pd
+import sqlalchemy as sql
+import config
+
+endpoint=config.aws_endpoint
+username='postgres'
+password=config.aws_password
+engine=sql.create_engine(f'postgresql://{username}:{password}@{endpoint}:5432/postgres')
+df=pd.read_sql_table('final_merged', con=engine)
+df.head()}
+```
+
 
 
 
