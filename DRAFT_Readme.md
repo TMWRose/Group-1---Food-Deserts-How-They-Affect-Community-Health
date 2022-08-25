@@ -1,6 +1,8 @@
+# What Environmental Factors Contribute Most to Community Health?
+
 ## Outline of the Project
 
-The root of the project was an interesting phenomenon that has been studied more and more lately called Food Desserts. 
+The root of the project was an interesting phenomenon that has been studied more and more in the past decade that researchers call 'Food Desserts'. 
 
 These are defined by the communities access to nutritious food. A place is categorized as a food dessert depending on a number of factors including the amount and type of stores that sell food in the area. There is still much discussion and debate over what exactly should be called a “ffood dessert”
 In an effort to define the term better the University of Michigan conducted a study in ten counties in Michigan that had areas within them that they believed to be food dessert. They broke down the counties into even smaller geographic areas, all the way down to individual neighborhoods, classified some as food desserts and collected extremely detailed information on the health metrics of the population. One thing was abundantly clear. Residents of these “food dessert” we in worse health than resident outside of the areas.
@@ -18,7 +20,6 @@ With the help of data in the USDA's Food Atlas we sought to understand what fact
 
 ### Data Source
  Data Source: 
- 
 
  Homepage: [USDA Food Atlas Documentation](https://www.ers.usda.gov/data-products/food-environment-atlas/data-access-and-documentation-downloads/)
  Raw Excel File: [HERE](https://www.ers.usda.gov/webdocs/DataFiles/80526/FoodEnvironmentAtlas.xls?v=3274.7)
