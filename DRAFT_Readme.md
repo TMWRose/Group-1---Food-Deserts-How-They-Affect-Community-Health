@@ -24,7 +24,7 @@ With the help of data in the USDA's Food Atlas we sought to understand what fact
 ### (A map of the realtionships within our database)
 * The data we were looking to extract was spread over nine different sheets within the MS Excel file that contained the entire Food Atlas. We extracted each sheet as a separate pandas dataframe and then exported each dataframe to a separate csv file without doing any further processing within pandas.
 
-'''
+```
 {
     ### USE THE LISTS ABOVE TO CREATE DATAFRAMES FROM EACH SHEET ###
 
@@ -40,9 +40,9 @@ socioeconomic_df = global_dict['SOCIOECONOMIC'][SOCIOECONOMIC_LIST]
 
 #access_df.head()
 }
-'''
+```
 
-'''
+```
 {## Output the dataframes to csv files ##
 
 population_df.to_csv('data/ATLAS/population.csv')
@@ -53,8 +53,9 @@ assistance_df.to_csv('data/ATLAS/assistance.csv')
 insecurity_df.to_csv('data/ATLAS/insecurity.csv')
 local_df.to_csv('data/ATLAS/local.csv')
 health_df.to_csv('data/ATLAS/health.csv')
-socioeconomic_df.to_csv('data/ATLAS/socioeconomic.csv')}
-'''
+socioeconomic_df.to_csv('data/ATLAS/socioeconomic.csv')
+}
+```
 
 * We chose to do it this way to fulfil the rubric requirement that we have multiple tables in our database and that we perform at least some kind of join within our database.
 
