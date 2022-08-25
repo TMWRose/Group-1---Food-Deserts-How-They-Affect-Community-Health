@@ -13,15 +13,22 @@ Besides environment and socioeconomic statistics the Food Atlas also includes Tw
 
 With the help of data in the USDA's Food Atlas we sought to understand what factors within a community were common among areas with poor health.
 
-
-## DRAFTS
-
-#### Data Source
-#### Data Source
+### Software and Tools Used: 
 
 
-## Entity Relationship Diagram
-### (A map of the realtionships within our database)
+### Data Source
+ Data Source: 
+ 
+
+ Homepage: [USDA Food Atlas Documentation](https://www.ers.usda.gov/data-products/food-environment-atlas/data-access-and-documentation-downloads/)
+ Raw Excel File: [HERE](https://www.ers.usda.gov/webdocs/DataFiles/80526/FoodEnvironmentAtlas.xls?v=3274.7)
+ Last updated: Friday, December 18, 2020
+
+
+
+## Preliminary Data Processing
+### Entity Relationship Diagram
+#### (A map of the realtionships within our database)
 * The data we were looking to extract was spread over nine different sheets within the MS Excel file that contained the entire Food Atlas. We extracted each sheet as a separate pandas dataframe and then exported each dataframe to a separate csv file without doing any further processing within pandas.
 
 ```
@@ -61,12 +68,6 @@ socioeconomic_df.to_csv('data/ATLAS/socioeconomic.csv')
 
 ![image](https://user-images.githubusercontent.com/100237685/183312296-1b115e6b-e4ea-4b6e-8326-334692879380.png)
 
-
-### Preliminary Data Processing
-
-
-* The data we were looking to extract was spread over nine different sheets. We extracted each sheet as a separate pandas dataframe and then exported each dataframe to a separate csv file without doing any further processing withing pandas.
-* We chose to do it this way to fulfil the rubric requirement that we have multiple tables in our database and that we perform at least some kind of join within our database.
 
 
 ### Feature Selection
