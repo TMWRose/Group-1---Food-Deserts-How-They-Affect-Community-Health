@@ -16,10 +16,7 @@ Besides environment and socioeconomic statistics the Food Atlas also includes Tw
 
 With the help of data in the USDA's Food Atlas we sought to understand what factors within a community were common among areas with poor health.
 
-### Software and Tools Used: 
-
-
-### Data Source
+## Data Source
  **The United States Department of Agriculture Food Atlas:**
 
  Last updated: Friday, December 18, 2020
@@ -27,6 +24,8 @@ With the help of data in the USDA's Food Atlas we sought to understand what fact
  **Homepage:** [USDA Food Atlas Documentation](https://www.ers.usda.gov/data-products/food-environment-atlas/data-access-and-documentation-downloads/)
  **Raw Excel File:** [HERE](https://www.ers.usda.gov/webdocs/DataFiles/80526/FoodEnvironmentAtlas.xls?v=3274.7)
  
+### Software and Tools Used: 
+VS Code, HTML5, JavaScript, CSS, Github Pages, QuickDb, Tableau, Canva, Google Meet, Python 3.10.5 (Modules: Jupyter Notebook, Pandas, Numpy, SKLearn, sqalchemy
 
 
 
