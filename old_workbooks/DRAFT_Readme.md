@@ -4,7 +4,8 @@
 
 The root of the project was an interesting phenomenon that has been studied more and more in the past decade that researchers call 'Food Desserts'. 
 
-These are defined by the communities access to nutritious food. A place is categorized as a food dessert depending on a number of factors including the amount and type of stores that sell food in the area. There is still much discussion and debate over what exactly should be called a “ffood dessert”
+These are defined by the communities access to nutritious food. A place is categorized as a food dessert depending on a number of factors including the amount and type of stores that sell food in the area. There is still much discussion and debate over what exactly should be called a “food dessert”
+
 In an effort to define the term better the University of Michigan conducted a study in ten counties in Michigan that had areas within them that they believed to be food dessert. They broke down the counties into even smaller geographic areas, all the way down to individual neighborhoods, classified some as food desserts and collected extremely detailed information on the health metrics of the population. One thing was abundantly clear. Residents of these “food dessert” we in worse health than resident outside of the areas.
 
 Initially we hoped to build a model off of this data that we could extrapolate to a larger, even nationwide dataset. After discussions with instructors we determined that It would be difficult to get meaningful insights that could be applied to a dataset as broad as the entire nation.
@@ -156,18 +157,34 @@ When realized that spending on prepaired food per capita, either from a fast foo
 
 When looking at ways to summarize our findings we first tried creating simple summary plots using seaborn and matplotlib within python.
 
-Eventually we settled on using Tableau Public because of it's robust mapping capabilities, built in styles, and it's ability to easily integrate with HTML could not be matched by any other free-to-use tools.
+Eventually we settled on using Tableau Public because of it's robust mapping capabilities, built in styles, and it's ability to easily integrate with HTML could not be matched by any other free-to-use tools we found 
 
 In order to better display the connection between spending at fast food and full service restuarants we divided the per capita spending by the median household income for the area. When we did it was clear that areas where residents spend more of their income on food prepaired outside of the home had significantly worse health than other areas where this factor was lower. 
 
 Using Tableau we created six maps to display on the website.
 
+A factor that has been identified by other researchers as systematic issue that contributes to poor community health is gennerational poverty. 
+
+The Food Atlas dataset we used included a classification that marked a community as a having Persistant Overall Poverty and Persistant Child Poverty
+
+The definitaion of persistant poverty from USDA:
+![poverty def](images/Poverty_definitions.png)
+
+Because we see a corrilation between these metrics and the poor health factors we decided to include the option for users to toggle this factor in our visualizations.
+
+
+ persistant poverty so we have made that factor togglable in the maps marked by an *
+
 1. Obesity Rate By State: The percentage of residents in each state catagorized as 'obese'
-2. Diabetes Rate: The percentage of residents of each county that have been diagnosed with diabetes
-3. Median Household Income: A general measure of poverty at the county level
+2. *Diabetes Rate: The percentage of residents of each county that have been diagnosed with diabetes
+3. *Median Household Income: A general measure of poverty at the county level
 4. Child Poverty Rate - The percentage of children living in poverty with a filter to toggle between counties that had been classified as being a Persistant Poverty Area
-5. Prepaired Food Spending - This highlights areas where spending on ready to eat food is high in realtion to the median income of the community
-6. Prepaired Food Spending in Areas with High Rates of Diabetes - This chart also includes a toggle to only look at counties that have persistant poverty
+5. *Prepaired Food Spending - This highlights areas where spending on ready to eat food is high in realtion to the median income of the community
+6. *Prepaired Food Spending in Areas with High Rates of Diabetes - Top Quartile of Diabetes Rates
+
+A factor that has been identified as systematic issue that contributes to poor community health is economic stagnation. The Food Atlas data we used included a factor that classifies a community as one that faces gnnerational persistant poverty. 
+
+Three of theses maps were configured to allow the user to toggle on an of
 
 ### Example Images
 #### Diabetes Rate for Adults

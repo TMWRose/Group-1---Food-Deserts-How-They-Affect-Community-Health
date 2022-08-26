@@ -1,61 +1,205 @@
-# Group-1 Obesity Mortality Rate in Food Deserts
+# What Environmental Factors Contribute Most to Community Health?
 
-website: https://tmwrose.github.io/Group-1---Food-Deserts-How-They-Affect-Community-Health
+## Outline of the Project
+
+The root of the project was an interesting phenomenon that has been studied more and more in the past decade that researchers call 'Food Desserts'. 
+
+These are defined by the communities access to nutritious food. A place is categorized as a food dessert depending on a number of factors including the amount and type of stores that sell food in the area. There is still much discussion and debate over what exactly should be called a “food dessert”
+
+In an effort to define the term better the University of Michigan conducted a study in ten counties in Michigan that had areas within them that they believed to be food dessert. They broke down the counties into even smaller geographic areas, all the way down to individual neighborhoods, classified some as food desserts and collected extremely detailed information on the health metrics of the population. One thing was abundantly clear. Residents of these “food dessert” we in worse health than resident outside of the areas.
+
+Initially we hoped to build a model off of this data that we could extrapolate to a larger, even nationwide dataset. After discussions with instructors we determined that It would be difficult to get meaningful insights that could be applied to a dataset as broad as the entire nation.
+
+When we realized that the UofM data would be difficult if not impossible to draw any actionable conclusions from we shifted our focus to trying to learn something about what factors in community make it residents unhealthy. Thankfully the United States Department of Agriculture regularly publishes what it calls it Food Atlas. It contains data for the entire nation broken down to mostly the county level and includes statistics for many of the same factors UofM was studying.
+
+Besides environment and socioeconomic statistics the Food Atlas also includes Two key indicators of health; obesity  and diabetes.udes Two key indicators of health; obesity  and diabetes. 
+
+With the help of data in the USDA's Food Atlas we sought to understand what factors within a community were common among areas with poor health.
+
+### Software and Tools Used: 
 
 
-Presentation: https://www.canva.com/design/DAFI31JlGEg/Chcfs1G24nPh6Oxv3tSNgw/view?utm_content=DAFI31JlGEg&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
+### Data Source
+ **The United States Department of Agriculture Food Atlas:**
 
-## Presentation
-* Analysis of how food deserts can affect a communities diabetes/obesity mortality rate.
-* We initially were going to focus on predicting if counties were food deserts or not based on countrywide zip codes, but that would have been a much bigger project than we could finish in 4 weeks, so we narrowed our focus to just diabetes. 
-* Our data comes from the Food Atlas by the USDA and data we pulled from the MU study *“A ‘Big Data’ Approach to Understanding Neighborhood Effects in Chronic Illness Disparities.”*
-* We are looking to predict the health of a county based on data from food deserts in Michigan. 
+ Last updated: Friday, December 18, 2020
 
-## Communication Protocols
-* Slack is the main communication method
-* Text is the secondary method of communication
-* Email is the back-up method of communication in case the first two fail
-* Meet as a team at 6PM, the hour before class, on Tuesday and Thursday to review progress
-
-## ERD
-![image](https://user-images.githubusercontent.com/100237685/183312296-1b115e6b-e4ea-4b6e-8326-334692879380.png)
-=======
-# Segment 2 update
-## Communication protocols
-
-* In this week's segment, all group members kept in touch via Slack and text messaging as a secondary option. 
-* There was also group meetings on Tuesdays and Thursdays 1 hour before the class session.
+ **Homepage:** [USDA Food Atlas Documentation](https://www.ers.usda.gov/data-products/food-environment-atlas/data-access-and-documentation-downloads/)
+ **Raw Excel File:** [HERE](https://www.ers.usda.gov/webdocs/DataFiles/80526/FoodEnvironmentAtlas.xls?v=3274.7)
  
- ##  Outline of the project
 
- * After multiple discussions among group members and advice from the instructor and teaching assistants, the dataset used for the machine learning process was a single excel file(FoodAtlasEnvironment.xls) derived from the USDA website. 
- * An update to the ERD was also done and it looks as shown below:
-  <img width="1015" alt="Screen Shot 2022-08-14 at 9 13 31 PM" src="https://user-images.githubusercontent.com/101376325/184566417-605c43f7-058b-4581-801d-5aba305f5028.png">
 
-  
- * The following 5 steps were followed and explanation in greater detail is included:
 
-### Preliminary Data Processing
-* The data we were looking to extract was spread over nine different sheets. We extracted each sheet as a separate pandas dataframe and then exported each dataframe to a separate csv file without doing any further processing withing pandas.
-* We chose to do it this way to fulfil the rubric requirement that we have multiple tables in our database and that we perform at least some kind of join within our database.
-### Feature Selection
+## Preliminary Data Processing
+The data we were looking to extract was spread over nine different sheets within the MS Excel file that contained the entire Food Atlas. We extracted each sheet as a separate pandas dataframe and then exported each dataframe to a separate csv file without doing any further processing within pandas.
+
+```
+
+    ### USE THE LISTS ABOVE TO CREATE DATAFRAMES FROM EACH SHEET ###
+
+population_df = global_dict['Supplemental Data - County'][POPULATION_LIST]
+access_df = global_dict['ACCESS'][ACCESS_LIST]
+store_df = global_dict['STORES'][STORES_LIST]
+restaurants_df = global_dict['RESTAURANTS'][RESTAURANTS_LIST]
+assistance_df = global_dict['ASSISTANCE'][ASSISTANCE_LIST]
+insecurity_df = global_dict['INSECURITY'][INSECURITY_LIST]
+local_df = global_dict['LOCAL'][LOCAL_LIST]
+health_df = global_dict['HEALTH'][HEALTH_LIST]
+socioeconomic_df = global_dict['SOCIOECONOMIC'][SOCIOECONOMIC_LIST]
+
+
+## Output the dataframes to csv files ##
+
+population_df.to_csv('data/ATLAS/population.csv')
+access_df.to_csv('data/ATLAS/access.csv')
+store_df.to_csv('data/ATLAS/stores.csv')
+restaurants_df.to_csv('data/ATLAS/restaurants.csv')
+assistance_df.to_csv('data/ATLAS/assistance.csv')
+insecurity_df.to_csv('data/ATLAS/insecurity.csv')
+local_df.to_csv('data/ATLAS/local.csv')
+health_df.to_csv('data/ATLAS/health.csv')
+socioeconomic_df.to_csv('data/ATLAS/socioeconomic.csv'
+```
+
+## Entity Relationship Diagram (ERD)
+### A map of the realtionships within our database
+
+We then created a SQL database by importing each csv sheet into postgres/pgAdmin as a seperate table. We chose to do it this way to fulfil the rubric requirement that we perform at least some kind of join within our database.
+
+```
+## Load the individual dataframes into the database ##
+
+population_df.to_sql('population', engine, index = False, if_exists='replace')
+access_df.to_sql('access', engine, index = False, if_exists='replace')
+store_df.to_sql('stores', engine, index = False, if_exists='replace')
+restaurants_df.to_sql('restaurants', engine, index = False, if_exists='replace')
+assistance_df.to_sql('assistance', engine, index = False, if_exists='replace')
+insecurity_df.to_sql('insecurity', engine, index = False, if_exists='replace')
+local_df.to_sql('local', engine, index = False, if_exists='replace')
+health_df.to_sql('health', engine, index = False, if_exists='replace')
+socioeconomic_df.to_sql('socioeconomic', engine, index = False, if_exists='replace')
+
+```
+
+We also needed to furfil a requirement that our data be hosted on the cloud. For this task we chose to create an remote database on Amazon Web Services and connect it to out local database
+
+```
+### Dependencies and Setup ###
+### LOAD DATAFRAME FROM AWS SERVER
+
+import pandas as pd
+import sqlalchemy as sql
+import config
+
+endpoint=config.aws_endpoint
+username='postgres'
+password=config.aws_password
+engine=sql.create_engine(f'postgresql://{username}:{password}@{endpoint}:5432/postgres')
+df=pd.read_sql_table('final_merged', con=engine)
+df.head()
+```
+
+
+
+
+## Feature Selection
 * Across the nine sheets we created, there were 73 distinct features. We selected columns from the Atlas data that would hopefully give us insights into the food environment for each row. These features included data related to the density food retailers in the county broken down by establishment type, data related to the overall health of the area, population data, and some socioeconomic factors.
 * After exploring the data we had we decided to drop a few columns we had initially selected because they had too many null values to be of any use to us.
-### Feature Engineering
+
+
+## Feature Engineering
 * For many of these measures we had matched pairs of data with results from 2 different years. Ultimately, we decided to average those pairs as part of our standardization and feature engineering.
 <img width="813" alt="Screen Shot 2022-08-14 at 8 53 47 PM" src="https://user-images.githubusercontent.com/101376325/184564926-ddba6130-6ec8-494d-a652-cbce77e1f9e3.png">
 
 * The other engineering we did before feeding our data into the machine learning model was to standardize it using the StandardizedScaler from the sklearn module. We then used the train_test_split function from sklearn to split our data into training and testing sets. We used the standard parameters to do the split.
-### Model Selection and EDA
+
+
+## Model Selection and EDA
 * After a discussion with the instructor, we were convinced to try a Random Forest Regressor to model our data. RFR is a supervised learning algorithm that allows us to test for a single target variable and through an ensemble learning method of using diverging decision trees arrives at a weighted average for our independent variables to give us an insight on what independent variables contribute the most to our target feature.
-* We ran the RFR for two possible target variables. The first was the diabetes rate in the population. After scoring our model for predicting that rate we received a 0.9681 factor for our training score and 0.7639 for our test data score. This score does not indicate a particularly accurate model.
-  <img width="1202" alt="Screen Shot 2022-08-14 at 8 39 52 PM" src="https://user-images.githubusercontent.com/101376325/184564340-cda36eb1-ee10-43c5-8754-7202cbfca7ef.png">
-* When we changed our target feature to the obesity rate we were able to see our training score jump to .9999 and our testing score up to .9964
-  <img width="1191" alt="Screen Shot 2022-08-14 at 8 40 53 PM" src="https://user-images.githubusercontent.com/101376325/184564406-3e0c9d08-2e36-4c17-b8c8-ccaa80757508.png">
+
+We ran the RFR for two possible target variables. 
+
+When we targeted obesity rate saw some off the charts accuracy scores
+![obesity score](images/obesity_test_score.png)
+![obesity factores](images/obesity_top_factors.png)
+
+The problem with this approach is that the dataset only had obesity rates at the state level. 
+
+
+When we changed the target to diabetes rate, which we had values for at the county level the model score predictably fell.
+
+![diabetes score](images/diabetes_test_score.png)
+![diabetes factors](images/diabetes_top_factors.png)
+
+
+A score of .81 is not optimal but when we considered the scope data and the difficulty of predicting such a difficult variable we felt that some insights might still be gained from our imperfect model. 
+
+Unfortunately the time frame of the project meant we were unable to continue to work on the model. In an ideal situation we would have been able to try different paramenters for our RFR model and been able to go back to the data engineering phase to compile different sets of factors and run them through to look for a better fit and stronger relationships. 
+
+
+## Conclutions
+
+While both of our models were imperfect for the reasons mentioned above by looking at the results of both we were able to make some interesting conclusions. There were a number of factors that were shared between the two models. Most of the factors identified in both models were related to the socioeconomic makeup of the area. 
+
+The thing that stood out to us were the shared factors that didn't have an obvious tie to the socioeconomic makeup of the county.  In fact two of the top contributing factors for both obesity and diabetes rates that we identified seemed to be in conflict with the simple conclution.
+
+
+![formatted list](images/top_factors_presentation.png)
+
+Our analysis suggested that areas that spend more money on prepaired food, either at food food or full service restaurants were more likely to be unhealthy.
+
+ We chose to focus on this relationship to focus on in the reporting phase of the project.
+
+
+When realized that spending on prepaired food per capita, either from a fast food establishment and/or a full service restuarant, was closely tied to the key health metrics of the community. We descided that this concultion seemed worthy of summary and visualization.
+
 ## Summary
-* Our preliminary data analysis yielded some interesting results. The RFR model found that the feature that most contributed to obesity rate was Expenditure per capita at full service restaurants. The measure of expenditure per person at fast food restaurants ranked fifth in our models weight of importance. 
-* The categories that ranked second, third and fourth by order of importance all relate to the poverty level of the locale. Two were measure of the percentage of the population that receives federal food assistance in the form of WIC or SNAP benefits. The other measure the factor called Household Food Insecurity.
-<img width="400" alt="Screen Shot 2022-08-14 at 8 42 11 PM" src="https://user-images.githubusercontent.com/101376325/184564432-6b5a3364-0144-4604-b52d-d23975be6f07.png">
 
-* While it isn't surprising that many of the factors that contribute the most to bad health at the county level are poverty related. What is interesting and worthy of more exploration is why these three factors in particular stood out when there were a number of other metrics about poverty, including a few that directly measured the poverty rate. 
+When looking at ways to summarize our findings we first tried creating simple summary plots using seaborn and matplotlib within python.
 
+Eventually we settled on using Tableau Public because of it's robust mapping capabilities, built in styles, and it's ability to easily integrate with HTML could not be matched by any other free-to-use tools we found 
+
+In order to better display the connection between spending at fast food and full service restuarants we divided the per capita spending by the median household income for the area. When we did it was clear that areas where residents spend more of their income on food prepaired outside of the home had significantly worse health than other areas where this factor was lower. 
+
+Using Tableau we created six maps to display on the website.
+
+A factor that has been identified by other researchers as systematic issue that contributes to poor community health is gennerational poverty. 
+
+The Food Atlas dataset we used included a classification that marked a community as a having Persistant Overall Poverty and Persistant Child Poverty
+
+The definitaion of persistant poverty from USDA:
+![poverty def](images/Poverty_definitions.png)
+
+Because we see a corrilation between these metrics and the poor health factors we decided to include the option for users to toggle this factor in our visualizations.
+
+
+ Visualizations that can be filtered by Persistant Povery Status by an *:
+
+1. Obesity Rate By State: The percentage of residents in each state catagorized as 'obese'
+2. *Diabetes Rate: The percentage of residents of each county that have been diagnosed with diabetes
+3. *Median Household Income: A general measure of poverty at the county level
+4. Child Poverty Rate - The percentage of children living in poverty with a filter to toggle between counties that had been classified as being a Persistant Poverty Area
+5. *Prepaired Food Spending - This highlights areas where spending on ready to eat food is high in realtion to the median income of the community
+6. *Prepaired Food Spending in Areas with High Rates of Diabetes - Top Quartile of Diabetes Rates
+
+A factor that has been identified as systematic issue that contributes to poor community health is economic stagnation. The Food Atlas data we used included a factor that classifies a community as one that faces gnnerational persistant poverty. 
+
+Three of theses maps were configured to allow the user to toggle on an of
+
+### Example Images
+#### Diabetes Rate for Adults
+![diatese map](images/adult_diabetes_rate.png)
+
+
+#### Spending on Prepaired Food as Percentage of Income
+![food spending](images/food_spending_vs_income.png)
+
+### Website Creation
+We created a website using  VS Code, HTML5,  JavaScript, and CSS github pages was used to deploy the website.
+
+[Project Summary Website](https://tmwrose.github.io/Group-1---Food-Deserts-How-They-Affect-Community-Health/)
+
+
+
+
+We created a website using  VS Code, HTML5,  JavaScript, and CSS github pages 
