@@ -197,8 +197,10 @@ Three of theses maps were configured to allow the user to toggle on an of
 ### Website Creation
 We created a website using  VS Code, HTML5,  JavaScript, and CSS github pages was used to deploy the website.
 
-[Project Summary Website](https://tmwrose.github.io/Group-1---Food-Deserts-How-They-Affect-Community-Health/)
-[Presentation](https://www.canva.com/design/DAFI31JlGEg/Chcfs1G24nPh6Oxv3tSNgw/view?utm_content=DAFI31JlGEg&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
+Project Website: [Project Summary Website](https://tmwrose.github.io/Group-1---Food-Deserts-How-They-Affect-Community-Health/)
+
+
+Bootcamp Presentation Slides: [Presentation](https://www.canva.com/design/DAFI31JlGEg/Chcfs1G24nPh6Oxv3tSNgw/view?utm_content=DAFI31JlGEg&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
 
 
 
